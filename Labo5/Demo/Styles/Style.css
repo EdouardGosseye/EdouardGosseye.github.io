@@ -1,0 +1,30 @@
+h1,h2
+{
+    color: lime;
+}
+
+/* com*/
+/*
+h2
+{
+    color: blue;
+}
+*/
+/* class (mag je meerdere keren gebruiken)*/
+.styleRed
+{
+    color: darkred;
+    font-size: 4em;
+}
+
+/* ID (mag je maar 1keer gebruiken) */
+#opmaak
+{
+color:black;
+}
+
+section > h1
+{
+    color: rgba(28,255,248,0.91);
+    font-size: 5em;
+}
