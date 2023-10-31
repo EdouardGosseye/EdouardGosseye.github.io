@@ -1,0 +1,39 @@
+body
+{
+    background-color: yellow;
+    font-size: 3em;
+}
+
+/* element selector*/
+h1
+{
+   /* font-size: 3em; dit niet doen word al overgeerft van body*/
+    background-color: red;
+}
+
+/*pseudo-element selector*/
+p:first-letter
+{
+    font-size: 5em;
+    color: red;
+}
+
+p:first-line
+{
+    /*text-decoration:underline;*/
+}
+
+/*pseudo-class selector*/
+a:link
+{
+    text-decoration: none;
+}
+li>a:hover
+{
+    text-decoration: underline;
+}
+li:nth-child(2n)
+{
+    color: blue;
+}
+
