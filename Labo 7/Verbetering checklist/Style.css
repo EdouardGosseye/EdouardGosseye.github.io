@@ -1,0 +1,16 @@
+
+ul.checklist
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.checklist li::before
+{
+    content: url('Image/no_check.jpg');
+}
+
+li.checked::before
+{
+    content: url('Image/check.jpg');
+}

@@ -1,0 +1,43 @@
+
+table
+{
+    border-collapse: collapse;
+}
+
+td, th
+{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+td:last-child
+{
+    background-color:  rgb(255, 220, 220);
+}
+
+td:first-child
+{
+    background-color:  rgb(255, 220, 220);
+}
+
+thead > tr > th
+{
+    background-color: rgb(170,170,200);
+}
+
+.weekdag
+{
+    color: rgb(200,190,240);
+    background-color: rgb(35,37,70);
+}
+
+.vrijeDag
+{
+ background-color: rgb(250,120,120);
+}
+
+.vorigeMaand
+{
+    background-color: grey;
+}

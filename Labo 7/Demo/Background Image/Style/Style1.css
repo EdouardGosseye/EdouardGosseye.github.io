@@ -1,0 +1,24 @@
+body
+{
+    margin: 0px;
+    background-color: #EDF2F4;
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+header h1
+{
+    margin: 0px;
+    color: red
+}
+
+header
+{
+    height: 1000px;
+    background-image: url(../Image/header.jpg);
+    background-repeat: no-repeat;/*repeat-y voor herhaling in kolom vorm*/
+    background-color: #FFFFFF;
+    background-size: cover;
+}
+
