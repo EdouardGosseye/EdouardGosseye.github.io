@@ -1,0 +1,95 @@
+ body
+ {
+     font-size: 1.2em;
+     font-family: Verdana, Helvetica, Arial;
+     text-align: center;
+ }
+
+canvas
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1
+{
+    color: #007e7e;
+    font-size: 150%;
+}
+
+h2
+{
+    color: #007e7e;
+    font-size: 130%;
+}
+
+.weekly-specials h1
+{
+    color: cornflowerblue;
+}
+
+.weekly-specials h2
+{
+    color: deeppink;
+}
+
+.footer
+{
+    font-size: 0.6em;
+}
+
+.weekly-specials a:hover
+{
+    background-color: brown;
+    color: white;
+}
+
+.weekly-specials p
+{
+    margin-bottom: 20px;
+}
+
+#cursief
+{
+    font-style: italic;
+}
+
+#guarantee
+{
+    margin: 30px;
+    padding: 20px;
+    color: rgb(44,44,44);
+    background-color: #a7cece;
+    border: dotted white;
+}
+
+ #guarantee img
+ {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+     float: left;
+ }
+
+ .weekly-specials
+ {
+     width: 30%;
+     float: right;
+     border: 5px solid #007e7e;
+     box-sizing: border-box;
+ }
+
+ .article
+ {
+     width: 70%;
+     float: left;
+     text-align: left;
+ }
+
+ .img_header {
+     width: 20%;
+     height: auto;
+     max-width: 100%;
+     display: block;
+ }
