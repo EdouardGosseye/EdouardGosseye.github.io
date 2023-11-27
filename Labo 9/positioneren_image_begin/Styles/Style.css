@@ -1,0 +1,33 @@
+article
+{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: auto;
+
+}
+article h2, p
+{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+article:nth-child(even) img
+{
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+article:nth-child(odd) img
+{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
