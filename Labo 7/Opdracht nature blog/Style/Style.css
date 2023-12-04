@@ -22,7 +22,7 @@ h1
 
 section>header>h1
 {
-    background-image: url("image/header.jpg");
+    background-image: url("../image/header.jpg");
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     background-size: cover;

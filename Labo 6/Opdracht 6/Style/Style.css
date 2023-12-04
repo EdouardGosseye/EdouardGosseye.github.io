@@ -7,12 +7,12 @@ ul.checklist
 
 ul.checklist li::before
 {
-    content: url('Image/no_check.jpg');
+    content: url('../Image/no_check.jpg');
     margin-right: 5px;
 }
 
 ul.checklist li.checked::before
 {
-    content: url('Image/check.jpg');
+    content: url('../Image/check.jpg');
 }
 

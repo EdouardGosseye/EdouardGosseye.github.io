@@ -7,10 +7,10 @@ ul.checklist
 
 .checklist li::before
 {
-    content: url('Image/no_check.jpg');
+    content: url('../Image/no_check.jpg');
 }
 
 li.checked::before
 {
-    content: url('Image/check.jpg');
+    content: url('../Image/check.jpg');
 }

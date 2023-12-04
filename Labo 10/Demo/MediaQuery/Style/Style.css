@@ -1,0 +1,57 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p
+{
+    margin: 0px;
+}
+header
+{
+
+    text-align:center;
+    background-color:lightsteelblue;
+}
+
+#left
+{
+    background-color:lightblue;
+    float: left;
+    width: 75%;
+    min-height: 200px;
+}
+
+#right
+{
+    background-color:lightcoral;
+    float: left;
+    width: 25%;
+    min-height: 200px;
+}
+
+footer
+{
+    text-align:center;
+    background-color:lightgreen;
+}
+
+@media screen and (max-width: 768px)
+{
+    #left {
+        width: 100%;
+        background-color: greenyellow;
+    }
+
+    #right {
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+}
