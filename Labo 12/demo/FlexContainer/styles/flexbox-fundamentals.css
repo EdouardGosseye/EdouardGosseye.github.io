@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: lightskyblue;
+    font-family: Chalkboard, sans-serif;
+}
+
+h1 {text-align: center;}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+
+.border {border: 2px solid black;}
+
+
+/* Start instellingen FlexBox */
+section {
+    background: coral;
+    height: 500px;
+    display: flex;
+
+    /*flex-direction: column;*/
+    /*flex-direction: row-reverse;*/
+
+    /*flex-wrap: wrap;*/
+    /*flex-wrap: wrap-reverse;*/
+
+    justify-content: space-around;
+    /*align-items: flex-end;*/
+}
+
+.grey-box
+{
+    background: grey;
+    width: 100%;
+
+    margin: 10px;
+    padding: 20px;
+    font-size: 2em;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <title>Title</title>
+
+    <style>
+        /*
+        Flex-grow
+        The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.
+
+        Defines how much a flexbox item should grow if there's space available https://cssreference.io/property/flex-grow/
+
+        default value is 0
+
+        exemple flew-grow is 1 (de andere geen waarde)
+        The element will grow by a factor of 1. It will fill up the remaining space if no other flexbox item has a flex-grow value.
+
+        Flex-shrink
+        The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items
+        Defines how much a flexbox item should shrink if there's not enough space available.
+        default value is 1 -> je neemt de breedte van de content tot de opgegeven waarde van width als er plaats is
+
+        value 0 -> je moet width waarde gebruiken
+
+         Flex-basis
+       The flex-basis property specifies the initial length of a flex item.
+
+       Flex
+
+       The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.
+       This is the shorthand for flex-grow, flex-shrink and flex-basis.
+       The second and third parameters (flex-shrink and flex-basis) are optional.
+
+        */
+        .box{
+            font-size:15px;
+            padding:15px;
+        }
+        .box1{background:green; /*flex-grow: 1;*/ flex-basis:150px; }
+        .box2{background:blue; /*flex-grow:2;*/ flex-basis:150px;}
+        .box3{background:red; flex-shrink: 0; flex-basis:150px;}
+
+        .container {
+            display: flex;
+
+        }
+    </style>
+</head>
+<body>
+<div class = "container">
+    <div class = "box box1">One</div>
+    <div class = "box box2">two</div>
+    <div class = "box box3">three</div>
+</div>
+</body>
+</html>
