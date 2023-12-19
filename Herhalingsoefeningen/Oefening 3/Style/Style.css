@@ -1,0 +1,27 @@
+img {
+    position: absolute;
+}
+#kat1 {
+    top: 100px;
+    left: 100px;
+    width: 100px;
+}
+#kat2 {
+    /*bottom: 100px;
+    right: 100px;*/
+    top: calc(100% - (100px + 120px));/*120px of de 200px is de hoogte/breedte van de foto*/
+    left: calc(100% - (100px + 200px));
+    width: 100px;
+}
+#kat3 {
+    top: 100px;
+    left: calc(100% - (100px + 200px));
+    /*right: 100px;*/
+    width: 100px;
+}
+#bal {
+    left: 100px;
+    top: calc(100% - (100px + 120px));
+    /*bottom: 100px;*/
+    width: 100px;
+}

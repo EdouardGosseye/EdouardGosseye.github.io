@@ -1,0 +1,108 @@
+
+
+.caption {
+    font-family: helvetica;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.gridHeader {
+    background-color: #dcd6fe;
+}
+
+.gridNav {
+    background-color: #c6c0ff;
+}
+
+.gridMain {
+    background-color: #f9f6d2;
+}
+
+.gridAside {
+    background-color: #d4ffd1;
+}
+
+.gridFooter {
+    background-color: #ffd1d1;
+}
+
+@media (max-width: 786px) {
+    .grid {
+        display: grid;
+        grid-template-areas:
+                  'header'
+                  'navigation'
+                  'main'
+                  'aside'
+                  'footer';
+
+        grid-template-columns: 100% ;
+    }
+    .gridHeader { grid-area: header;}
+    .gridNav { grid-area: navigation;}
+    .gridMain { grid-area: main;}
+    .gridAside { grid-area: aside;}
+    .gridFooter { grid-area: footer;}
+
+    .gridHeader {
+        height: 100px;
+        text-align: center;
+    }
+
+    .gridNav {
+        text-align: center;
+        height: 100px;
+    }
+    .gridMain {
+        min-height: 800px;
+        text-align: center;
+    }
+    .gridAside {
+        text-align: center;
+        height: 100px;
+    }
+
+    .gridFooter {
+        height: 100px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 786px) {
+    .grid {
+        display: grid;
+        grid-template-areas:
+                  'header header header header header'
+                  '. navigation main aside . '
+                  'footer footer footer footer footer';
+
+        grid-template-columns: 5% 10% 70% 10% 5% ;
+    }d
+    .gridHeader { grid-area: header;}
+    .gridNav { grid-area: navigation;}
+    .gridMain { grid-area: main;}
+    .gridAside { grid-area: aside;}
+    .gridFooter { grid-area: footer;}
+
+    .gridHeader {
+        height: 100px;
+        text-align: center;
+    }
+
+    .gridNav {
+        text-align: center;
+    }
+    .gridMain {
+        min-height: 800px;
+        text-align: center;
+    }
+    .gridAside {
+        text-align: center;
+    }
+
+    .gridFooter {
+        height: 100px;
+        text-align: center;
+    }
+}
