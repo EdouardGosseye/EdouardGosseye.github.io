@@ -78,7 +78,7 @@
                   'footer footer footer footer footer';
 
         grid-template-columns: 5% 10% 70% 10% 5% ;
-    }d
+    }
     .gridHeader { grid-area: header;}
     .gridNav { grid-area: navigation;}
     .gridMain { grid-area: main;}
