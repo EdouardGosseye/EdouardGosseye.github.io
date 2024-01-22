@@ -2,118 +2,110 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Kitchn</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link href="bootstrap-grid.css" rel="stylesheet">
+    <title>Kitchn</title>
 </head>
 <body>
-
-<div class="header">
-    <img src="imagesKitchn/logo.png" alt="logo"/>
-</div>
-
-<nav>
+<header>
+    <img alt="logo" src="imagesKitchn/logo.png">
+    <hr class="greyHr"> <nav>
     <ul>
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Meal Planning</a></li>
-        <li><a href="#">Learn</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">Holiday</a></li>
-        <li><a href="#">More</a></li>
+        <li><a href="#">Recipes</a>
+        </li>
+        <li><a href="#">Meal Planning</a>
+        </li>
+        <li><a href="#">Learn</a>
+        </li>
+        <li><a href="#">Shop</a>
+        </li>
+        <li><a href="#">People</a>
+        </li>
+        <li><a href="#">Holiday</a>
+        </li>
+        <li><a href="#">More</a>
+        </li>
     </ul>
 </nav>
-
-<div>
-    <div class="mainHeader">
-        <p class="mainHeaderTitle">Better food, better mood</p>
+</header>
+<main>
+    <div class="banner">
+        <span>Better food, better mood</span>
     </div>
-
-    <div class="mainRecipe">
-            <h1>Recipes</h1>
-        <div class="recipeItem">
+    <section id="recipes">
+        <h1>Recipes</h1>
+        <div class="grid">
             <article>
-                <p class="mainRecipeItemTitle"> Kitchn Love Letters</p>
-                <h2><a href="#">This One-Pan Mushroom and Steak Recipe Is Calling Your Name</a></h2>
-                <p class="mainRecipeItemBody">Raise your hand if you're making this for dinner tonight!</p>
-                <p class="mainRecipeItemAuthor"> by Elizabeth Licata <span>May 3, 2019</span> </p>
+                <span class="category">Kitchn Love Letters</span>
+                <a href="#">
+                    <h2>This One-Pan Mushroom and Steak Recipe Is Calling Your Name</h2>
+                </a>
+                <span class="subtitle">Raise your hand if you're making this for dinner tonight!</span>
+                <span class="author">by Elizabeth Licata</span>
+                <span class="date">May 3, 2019</span>
             </article>
-
-            <div>
-                <img src="imagesKitchn/recipes/bbq.jpeg" alt="bbq" class="respimg"/>
-            </div>
-
+            <img alt="bbq" class="respimg" src="imagesKitchn/recipes/bbq.jpeg">
             <article>
-                <p class="mainRecipeItemTitle">Next week's meal plan</p>
-                <h2><a href="#">Recipe: Walnut & Black Bean Veggie Burgers</a></h2>
-                <p class="mainRecipeItemBody">The ingredients and technique that ensure success every time.</p>
-                <p class="mainRecipeItemAuthor">by Kelly Foster<span>May 1, 2019</span></p>
+                <span class="category">Next week's meal plan</span>
+                <a href="#">
+                    <h2>Recipe: Walnut & Black Bean Veggie Burgers</h2>
+                </a>
+                <span class="subtitle">The ingredients and technique that ensure success every time.</span>
+                <span class="author">by Kelly Foster</span>
+                <span class="date">May 1, 2019</span>
             </article>
-
-            <div>
-                <img src="imagesKitchn/recipes/burger.jpeg" alt="burger" class="respimg"/>
-            </div>
-
+            <img alt="burger" class="respimg" src="imagesKitchn/recipes/burger.jpeg">
             <article>
-                <p class="mainRecipeItemTitle">Kitchn Love Letters</p>
-                <h2><a href="#">Next Week’s Meal Plan: A Week of Mediterranean Diet Dinners</a></h2>
-                <p class="mainRecipeItemBody">Welcome to Next Week’s Meal Plan! I want to help you find inspiration and ease some of the pain points
-                that come with getting dinner on the table night after night, whether you’re cooking for one or a family
-                of eight.</p>
-                <p class="mainRecipeItemAuthor">by Sheela Prakash <span>April 24, 2019</span></p>
+                <span class="category">Kitchn Love Letters</span>
+                <a href="#">
+                    <h2>Next Week’s Meal Plan: A Week of Mediterranean Diet Dinners</h2>
+                </a>
+                <span class="subtitle">Welcome to Next Week’s Meal Plan! I want to help you find inspiration and ease some of the pain points that come with getting dinner on the table night after night, whether you’re cooking for one or a family of eight.</span>
+                <span class="author">by Sheela Prakash</span>
+                <span class="date">April 24, 2019</span>
             </article>
-
-            <div>
-                <img src="imagesKitchn/recipes/mediterranean.png" alt="mediterranean" class="respimg"/>
+            <img alt="mediterranean" class="respimg" src="imagesKitchn/recipes/mediterranean.png">
+        </div>
+    </section>
+    <section id="recommended">
+        <h1>Recommended for you</h1>
+        <div class="list">
+            <div class="row">
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img alt="food1" class="respimg" src="imagesKitchn/recommended/food1.jpg">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img alt="food2" class="respimg" src="imagesKitchn/recommended/food2.jpg">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img alt="food3" class="respimg" src="imagesKitchn/recommended/food3.jpg">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img alt="food4" class="respimg" src="imagesKitchn/recommended/food4.jpg">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img alt="food5" class="respimg" src="imagesKitchn/recommended/food5.jpg">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img alt="food6" class="respimg" src="imagesKitchn/recommended/food6.jpg">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img alt="food7" class="respimg" src="imagesKitchn/recommended/food7.jpg">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img alt="food8" class="respimg" src="imagesKitchn/recommended/food8.jpg">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img alt="food9" class="respimg" src="imagesKitchn/recommended/food9.jpg">
+                </div>
             </div>
         </div>
-
-    </div>
-
-    <div class="mainRecommended">
-            <h1>Recommended for you</h1>
-        <div class="recommendedList">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagesKitchn/recommended/food1.jpg" alt="food1" class="respimg"/>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagesKitchn/recommended/food2.jpg" alt="food2" class="respimg"/>
-
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagesKitchn/recommended/food3.jpg" alt="food3" class="respimg"/>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagesKitchn/recommended/food4.jpg" alt="food4" class="respimg"/>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagesKitchn/recommended/food5.jpg" alt="food5" class="respimg"/>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagesKitchn/recommended/food6.jpg" alt="food6" class="respimg"/>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagesKitchn/recommended/food7.jpg" alt="food7" class="respimg"/>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagesKitchn/recommended/food8.jpg" alt="food8" class="respimg"/>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="imagesKitchn/recommended/food9.jpg" alt="food9" class="respimg"/>
-            </div>
-        </div>
-    </div>
-
-</div>
-
+    </section>
+</main>
 <footer>
-    <div id="left">
-        EAT GOOD, FEEL GOOD
-    </div>
-    <div id="right">
-        Kitchn is  &copy; 1994-2020
-    </div>
+    <div id="left"> EAT GOOD, FEEL GOOD </div>
+    <div id="right"> Kitchn is &copy; 1994-2020 </div>
 </footer>
-
 </body>
 </html>
