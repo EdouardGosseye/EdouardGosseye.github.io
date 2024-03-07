@@ -70,7 +70,7 @@ nav a:hover
 }
 .banner
 {
-    background-image: url("../BeginSituatie_Kitchn/imagesKitchn/headerimage.jpg");
+    background-image: url("imagesKitchn/headerimage.jpg");
     height: 350px; /* 500px (opgave) is te hoog, niet aantrekkelijk*/
     background-position: center;
     background-repeat: no-repeat;
