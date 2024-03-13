@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="student/index">
+    <label for="txtName" >Name*: </label>
+    <!--<input type="number" min="2" max="7" id="txtName" required />-->
+    <input type="text" placeholder="gelieve naam in te geven" id="txtName" required />
+    <label for="txtPassword" >Password*:</label>
+    <input type="password" id="txtPassword" />
+    <label for="txtPhone" >GSM*:</label>
+    <input type="tel" id="txtPhone" pattern="04[0-9]{2}\/[0-9]{6}"/>
+    <label for="txtUrl" >url: </label>
+    <input  type="url" id="txtUrl" />
+
+
+    <input type="submit" value="send" />
+</form>
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>
