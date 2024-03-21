@@ -1,0 +1,30 @@
+const setup = () => {
+    document.getElementById("btnToon").addEventListener("click", toonTrigrams)
+}
+
+const toonTrigrams = () => {
+    let txtTekst = document.getElementById("txtTekst");
+    let tekst = txtTekst.value;
+    let lstTrigrams = document.getElementById("lstTrigrams");
+    let trigrams = getTrigram(tekst);
+    let output = "";
+    for (let i = 0; i < trigrams.length; i++)
+    {
+        output += "<li>" + trigrams[i] + "</li>";
+    }
+    lstTrigrams.innerHTML = output;
+}
+
+
+
+const getTrigram = (tekst) => {
+    let result = [];
+    let trigram;
+    for (let i = 0; i <= tekst.length - 3; i++)
+    {
+       trigram =tekst.slice(i,i+3);
+       result.push(trigram)
+    }
+    return result;
+}
+window.addEventListener("load", setup); 

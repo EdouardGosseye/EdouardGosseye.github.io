@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Title</title>
+</head>
+<body>
+<form onsubmit="return validateForm()">
+    <label for="firstName">Voornaam:</label><br>
+    <input type="text" id="firstName" name="firstName" maxlength="30"><span id="firstNameError" class="error"></span><br><br>
+
+    <label for="lastName">Familienaam:</label><br>
+    <input type="text" id="lastName" name="lastName" maxlength="50"><span id="lastNameError" class="error"></span><br><br>
+
+    <label for="birthDate">Geboortedatum:</label><br>
+    <input type="text" id="birthDate" name="birthDate" placeholder="jjjj-mm-dd"><span id="birthDateError" class="error"></span><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><span id="emailError" class="error"></span><br><br>
+
+    <label for="children">Aantal kinderen:</label><br>
+    <input type="number" id="children" name="children" min="0" max="98"><span id="childrenError" class="error"></span><br><br>
+
+    <input type="submit" value="Valideer">
+</form>
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>
