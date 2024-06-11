@@ -1,0 +1,27 @@
+.twitter {
+    background-color: #addae8;
+}
+
+.youtube {
+    background-color: #fa4848;
+}
+
+.google {
+    background-color: #2790fd;
+}
+
+.instagram {
+    background-color: #c163ee;
+}
+
+#clearStorage {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+}
+
+#clearStorage:hover {
+    background-color: grey;
+    color: white;
+}

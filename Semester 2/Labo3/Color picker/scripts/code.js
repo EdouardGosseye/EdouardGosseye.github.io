@@ -1,5 +1,4 @@
 const setup = () => {
-	let colorDemos = document.getElementsByClassName("colorDemo");
 	let sliders = document.getElementsByClassName("colorSlider");
 
 	for (let i = 0; i < sliders.length; i++) {

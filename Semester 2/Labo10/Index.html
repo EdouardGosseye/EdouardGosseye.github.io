@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/style.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet">
+    <title>My startpage</title>
+</head>
+<body class="my-5">
+<div class="container">
+    <h1>My Internet Start Page</h1>
+    <div class="search">
+        <label class="fs-5 text" for="txtZoekopdracht">Zoekopdracht</label>
+        <br>
+        <input class="input-group p-2 rounded" id="txtZoekopdracht" name="txtZoekopdracht" type="text" placeholder="Enter command">
+        <h6 class="mb-3 fw-normal">Start your commando with "/[character] [zoekopdracht]"</h6>
+        <button class="btn btn-lg btn-success w-100 mb-3" id="go" type="submit">GO!</button>
+    </div>
+    <div class="container history">
+        <h2>History</h2>
+        <div class="row gy-4">
+        </div>
+    </div>
+</div>
+<button class="rounded" id="clearStorage">Clear local storage</button>
+<script charset="utf-8" src="scripts/code.js" type="text/javascript"></script>
+</body>
+</html>

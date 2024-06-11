@@ -1,31 +1,38 @@
 const setup = () => {
-    const herberekenButton = document.querySelector('button');
-    herberekenButton.addEventListener('click', herbereken);
+    console.log ("setup");
+    let btnHerbereken = document.getElementsByClassName('btnHerbereken')[0];
+    btnHerbereken.addEventListener("click", update);
+
+    update();
 };
 
-const herbereken = () => {
-    const prijsCellen = document.getElementsByClassName('prijs');
-    const aantalCellen = document.getElementsByClassName('aantal');
-    const btwCellen = document.getElementsByClassName('btw');
-    const subtotaalCellen = document.getElementsByClassName('subtotaal');
 
-    let totaalBedrag = 0;
 
-    for (let i = 0; i < prijsCellen.length; i++) {
 
-        const prijs = parseFloat(prijsCellen[i].innerText.replace(' EUR', '').replace(',', '.'));
-        const aantal = parseFloat(aantalCellen[i].getElementsByTagName('input')[0].value);
-        const btw = parseFloat(btwCellen[i].innerText.replace('%', '')) / 100;
+const update = () => {
 
-        const subtotaal = prijs * aantal * (1 + btw);
+    let txtBtws = document.getElementsByClassName('btw');
+    let txtAantallen = document.getElementsByClassName('aantal');
+    let txtPrijzen = document.getElementsByClassName('prijs');
+    let txtSubtotalen = document.getElementsByClassName('subtotaal');
+    let txtTotaal=document.getElementsByClassName('totaal')[0];
+    let totaal = 0;
 
-        subtotaalCellen[i].innerText = subtotaal.toFixed(2) + ' EUR';
+    for (let i = 0; i < txtBtws.length; i++) {
 
-        totaalBedrag += subtotaal;
+        let aantal=parseFloat(txtAantallen[i].value, 10);
+        console.log (txtBtws[i].innerHTML);
+        console.log (txtBtws[i].textContent);
+        let btw=parseFloat(txtBtws[i].innerHTML, 10); // let op : niet .value!
+        let prijs=parseFloat(txtPrijzen[i].innerHTML, 10); // let op : niet .value!
+        let subtotaal=aantal*prijs*(1+(btw/100));
+        totaal+=subtotaal;
+
+        txtSubtotalen[i].textContent=subtotaal.toFixed(2)+" Eur";
+
     }
-
-    const totaalCel = document.getElementById('totaalBedrag');
-    totaalCel.innerText = totaalBedrag.toFixed(2) + ' EUR';
+    txtTotaal.textContent=totaal.toFixed(2)+" Eur";
 };
 
-window.addEventListener('load', setup);
+window.addEventListener("load", setup);
+
