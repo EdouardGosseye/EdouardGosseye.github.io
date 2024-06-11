@@ -17,77 +17,74 @@ const setup = () => {
 }
 
 const start = () => {
-    removeStart();
-    document.getElementById("target").addEventListener("click",move)
-    startMovingTarget();
+    console.log("startgame");
+
+    // niet zichtbaar maken van button
+    document.getElementById("btnStart").style.display = "none";
+
     let target = document.getElementById("target");
-    target.addEventListener("click", deleteImg)
-    target.addEventListener("click", end)
+    target.addEventListener("click", klik);
+
+    move();
 
 }
 
 const move = () => {
-    let playField = document.getElementById("playField");
     let target = document.getElementById("target");
-    let randomX = Math.floor(Math.random() * (playField.offsetWidth - global.IMAGE_SIZE));
-    let randomY = Math.floor(Math.random() * (playField.offsetHeight - global.IMAGE_SIZE));
-    target.style.left = randomX + "px";
-    target.style.top = randomY + "px";
+    let speelScherm = document.getElementById("playField");
+    // maximale posities zijn afhankelijk van grootte speelscherm
+    let maxLeft = speelScherm.clientWidth - global.IMAGE_SIZE;
+    let maxTop = speelScherm.clientHeight - global.IMAGE_SIZE;
     let nummer = Math.floor(Math.random() * global.IMAGE_COUNT);
-    if (nummer === 0)
-    {
-        target.className = 'bom';
+
+    if (nummer == 0) {
+        // bom
+        target.className = "bom";
+    } else { // iets anders
+        target.className = "";
     }
-    else {
-        target.className  = "";
+    target.setAttribute("src", global.IMAGE_PATH_PREFIX
+        + nummer + global.IMAGE_PATH_SUFFIX);
+
+    target.style.left = Math.floor(Math.random() * maxLeft) + "px";
+    target.style.top = Math.floor(Math.random() * maxTop) + "px";
+
+    // start nieuwe timer
+    global.timeoutId = setTimeout(move, global.MOVE_DELAY);
+};
+const klik = (ev) => {
+
+    console.log(ev.target);
+    if (ev.target.className.indexOf("bom") != -1) {
+        // bom
+        gameOver();
+    } else {
+        // geen bom
+        hit();
     }
-    replaceImage()
 }
-
-const removeStart = () => {
-    let btnStart = document.getElementById("btnStart")
-    btnStart.remove();
-}
-const addStart = () => {
-    let btnStart =  document.createElement("button")
+const gameOver = () => {
+    // annuleer timer
+    clearTimeout(global.timeoutId);
+    alert ("GAME OVER");
 
 
-}
-const update =() => {
-        global.score++;
-        document.querySelector(".score").textContent = global.score;
-}
-
-const replaceImage = () => {
-    let target = document.getElementById("target");
-    let random = Math.floor(Math.random() * global.IMAGE_COUNT);
-    target.style.visibility = "visible";
-    target.src = `${global.IMAGE_PATH_PREFIX}${random}${global.IMAGE_PATH_SUFFIX}`;
 };
 
-const startMovingTarget = () => {
-    global.timeoutId = setInterval(move, global.MOVE_DELAY);
+const hit = () => {
+    let scoreSpans = document.getElementsByClassName("score");
+    let i = 0;
+
+    // annuleer timer
+    clearTimeout(global.timeoutId);
+
+    global.score++;
+    for (i = 0; i < scoreSpans.length; i++) {
+        scoreSpans[i].innerText = global.score;
+    }
+
+    move();
 };
-
-const deleteImg = () => {
-    let target = document.getElementById("target");
-    target.style.visibility = "hidden";
-}
-
-const end = (e) => {
-    if (e.target.className === "bom")
-    {
-        alert("GAME OVER");
-        console.log(e.target)
-        global.score = 0;
-        document.querySelector(".score").textContent = global.score;
-        clearInterval(global.timeoutId);
-        addStart();
-    }
-    else {
-        update();
-    }
-}
 
 window.addEventListener("load", setup);
 
